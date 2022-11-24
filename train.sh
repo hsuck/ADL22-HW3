@@ -25,4 +25,4 @@ python run_summarization.py \
     --ignore_pad_token_for_loss False \
     --report_to all \
     --overwrite_output_dir \
-    --output_dir mt5-small/ \
+    --output_dir mt5-small \
