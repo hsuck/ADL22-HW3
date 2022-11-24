@@ -6,7 +6,5 @@ python run_summarization.py \
     --text_column maintext \
     --per_device_eval_batch_size 4 \
     --num_beams 4 \
-    --do_sample \
-    --top_p 0.6 \
     --output_file ${2} \
-    --output_dir ./output/result \
+    --output_dir ./output/beams4 \
