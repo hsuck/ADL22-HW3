@@ -5,7 +5,6 @@ accelerate==0.13.0
 datasets==2.5.2
 scikit-learn==1.1.2
 evaluate
-rouge
 sentencepiece
 nltk
 jsonlines
