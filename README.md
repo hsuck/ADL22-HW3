@@ -61,6 +61,7 @@ python eval.py -r public.jsonl -s submission.jsonl
 ```
 bash train.sh path/to/train.jsonl path/to/valid.jsonl
 ```
+The training result will be at `mt5-small` directory.
 
 ### Testing
 ```
