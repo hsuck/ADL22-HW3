@@ -1,5 +1,5 @@
 python run_summarization.py \
-    --model_name_or_path mt5-small/ \
+    --model_name_or_path mt5-small \
     --do_predict \
     --test_file ${1} \
     --predict_with_generate \
