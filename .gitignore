@@ -4,4 +4,3 @@ mt5-small/
 output/
 __pycache__
 wandb/
-transformers/
