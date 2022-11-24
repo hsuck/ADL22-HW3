@@ -2,8 +2,8 @@ python run_summarization.py \
     --model_name_or_path google/mt5-small \
     --do_train \
     --do_eval \
-    --train_file data/train.jsonl \
-    --validation_file data/public.jsonl \
+    --train_file ${1} \
+    --validation_file ${2} \
     --num_train_epochs 3 \
     --per_device_train_batch_size 4 \
     --gradient_accumulation_steps 4 \
@@ -25,4 +25,4 @@ python run_summarization.py \
     --ignore_pad_token_for_loss False \
     --report_to all \
     --overwrite_output_dir \
-    --output_dir mt5-small/greedy \
+    --output_dir mt5-small/ \
