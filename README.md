@@ -46,17 +46,6 @@ python eval.py -r public.jsonl -s submission.jsonl
 }
 ```
 
-
-### Use Python Library
-```
->>> from tw_rouge import get_rouge
->>> get_rouge('我是人', '我是一個人')
-{'rouge-1': {'f': 0.7499999953125, 'p': 1.0, 'r': 0.6}, 'rouge-2': {'f': 0.33333332888888895, 'p': 0.5, 'r': 0.25}, 'rouge-l': {'f': 0.7499999953125, 'p': 1.0, 'r': 0.6}}
->>> get_rouge(['我是人'], [ '我是一個人'])
-{'rouge-1': {'f': 0.7499999953125, 'p': 1.0, 'r': 0.6}, 'rouge-2': {'f': 0.33333332888888895, 'p': 0.5, 'r': 0.25}, 'rouge-l': {'f': 0.7499999953125, 'p': 1.0, 'r': 0.6}}
->>> get_rouge(['我是人'], ['我是一個人'], avg=False)
-[{'rouge-1': {'f': 0.7499999953125, 'p': 1.0, 'r': 0.6}, 'rouge-2': {'f': 0.33333332888888895, 'p': 0.5, 'r': 0.25}, 'rouge-l': {'f': 0.7499999953125, 'p': 1.0, 'r': 0.6}}]
-```
 ### Training
 ```
 bash train.sh path/to/train.jsonl path/to/valid.jsonl
