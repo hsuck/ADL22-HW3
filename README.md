@@ -5,13 +5,19 @@
 
 ## Installation
 ```
+/* create conda environment */
+conda create --name <env_name> python=3.9
+conda activate <env_name>
+
 /* install tw_rouge */
 pip install -e tw_rouge
+
 /* install transformers */
 git clone https://github.com/huggingface/transformers.git
 cd transformers
 git checkout t5-fp16-no-nans
 pip install -e .
+
 /* install other packages */
 pip install -r requirements.txt
 ```
